@@ -1,0 +1,45 @@
+---
+interface Props {
+	name: string;
+    img: string;
+}
+
+const { name, img } = Astro.props;
+
+import Button from './Button.astro';
+---
+
+
+<style>
+    h1 {
+        font-family: 'gg Sans SemiBold';
+    }
+    @font-face {
+		font-family: "gg Sans";
+		src: url('/gg sans Regular.ttf') format('truetype');
+	}
+    @font-face {
+		font-family: "gg Sans SemiBold";
+		src: url('/gg sans Semibold.ttf') format('truetype');
+	}
+    @font-face {
+		font-family: "gg Sans Bold";
+		src: url('/gg sans Bold.ttf') format('truetype');
+	}
+    @font-face {
+		font-family: "gg Sans Medium";
+		src: url('/gg sans Medium.ttf') format('truetype');
+	}
+</style>
+
+<div class="bg-gradient-to-tr from-amber-100 to-yellow-800 rounded-lg shadow-lg max-w-md text-center p-0.5">
+    <div class="pt-4 pl-2 pr-2 pb-4 bg-gradient-to-tl rounded-lg from-neutral-900 to-stone-800">
+        <!-- Circular Profile Picture with Stroke -->
+        <div class="mx-auto h-42 w-40 rounded-full border-4 border-slate-500 shadow-lg overflow-hidden">
+            <img src={img} alt="Candy Horses Caramel" class="object-cover shadow-lg w-full h-42 rounded-full">
+        </div>
+        <h1 class="text-xl mt-4">{name}</h1>
+        <!-- Code Block Styled Bio -->
+        <slot></slot>
+    </div>
+</div>

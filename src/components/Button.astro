@@ -1,0 +1,24 @@
+---
+interface Props {
+	title: string;
+	href: string;
+    style: string;
+}
+
+const { href, style, title } = Astro.props;
+---
+<style>
+    .bg-normal-color {
+        background: linear-gradient(304deg, rgba(255,109,0,1) 0%, rgba(238,175,78,1) 100%);
+    }
+    .bg-trans-color {
+        background: linear-gradient(304deg, rgba(255,109,0,0.45280118883490894) 0%, rgba(238,175,78,0.45) 100%);
+    }
+</style>
+<div style={style} class="embed-style hover:bg-gradient-to-bl from-neutral-950 via-neutral-800 to-rose-950 p-0.5 rounded-lg mt-8">
+    <div class=" bg-trans-color hover:bg-normal-color rounded-md text-center align-center shadow-inner drop-shadow-md">
+        <a href={href}>
+            <p>{title}</p>
+        </a>
+    </div>
+</div>
