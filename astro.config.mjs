@@ -11,6 +11,9 @@ export default defineConfig({
   renderers: [
     // ...
   ],
+  redirects: {
+    '/status': 'https://status.caramel.dog'
+  },
   vite: {
     plugins: [postcss()]
   }
