@@ -10,6 +10,11 @@ import Button from '../components/Button.astro';
 	<main class="flex items-center justify-center min-h-screen">
 		<Profile name="Candy Creature Caramel" img="/caramel.jpg">
 			<div style="box-shadow: inset 2px 2px 1px 0 rgb(0 0 0 / 0.1);" class="bg-stone-800 text-white text-center mt-4 pt-2 pb-6 pl-4 pr-4 rounded-lg">
+				<span class="text-neutral-400" style="font-size: 0.75rem; line-height: 1rem;">Want to donate towards what I do?</span>
+				<div class="mt-1 flex justify-center flex-row space-x-2">
+					<Button title="Ko-Fi Tips" href="https://ko-fi.com/caramelhorse" />
+					<Button title="Crypto Tips" href="/blog/crypto-for-p2p" />
+				</div>
 				<p class="text-sm drop-shadow-md break-words">
 					<span class="text-neutral-400" style="font-size: 0.5rem; line-height: 1rem;">Hover or Click for details!</span>
 					<br/>
@@ -17,7 +22,7 @@ import Button from '../components/Button.astro';
 					<br/>
 					I am married to the wonderful <a href="https://devil.horse"><span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">💍 Mel</span></a>
 					<br/>
-					I work as a <a href="https://caramel.dog/cv"><span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 System Engineer</span></a>
+					I work as a <a href="/cv"><span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 System Engineer</span></a>
 					<br/><br/>
 					I work with <span title="A Creative Co-op" class="text-orange-400"><a href="https://candyhorses.social">Candy Horses</a></span>, spearheading departments 
 					<br/>like <span title="Internet Service Provider" class="text-orange-400"><a href="https://saddle.network">Saddle Networks</a></span> and <span title="Land Development" class="text-orange-400"><a href="https://wiki.candyhorses.social/stable-grounds-llc">Stable Grounds</a></span>.
@@ -61,13 +66,6 @@ import Button from '../components/Button.astro';
 					[ <span class="text-orange-400"><a href="https://wiki.carm.ml/ocs">Characters & Info</a></span> ]
 				</p>
 			</div>
-			<!--<div class="flex flex-col space-y-2">
-				<Button title="Blog" href="https://blog.carm.ml" />
-				<Button title="Twitter" href="https://twitter.com/caramelbat" />
-				<Button title="Bluesky" href="https://bsky.app/profile/caramel.dog" />
-				<Button title="Steam" href="https://steamcommunity.com/id/caramelmare/" />
-				<Button title="Derpi Tag" href="https://derpibooru.org/search?q=oc%3Acaramel+drop" />
-			</div>-->
 		</Profile>
 	</main>
 </Layout>
