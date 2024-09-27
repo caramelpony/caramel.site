@@ -1,0 +1,106 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
+import Profile from '../components/Profile.astro';
+import Button from '../components/Button.astro';
+---
+
+<Layout title={SITE_TITLE}>
+	<main class="flex items-center justify-center min-h-screen">
+		<Profile name="Candy Creature Caramel" img="/caramel.jpg">
+			<div style="box-shadow: inset 2px 2px 1px 0 rgb(0 0 0 / 0.1);" class="bg-stone-800 text-white text-center mt-4 pt-2 pb-6 pl-4 pr-4 rounded-lg">
+				<p class="text-sm drop-shadow-md break-words">
+					<br/>
+					I work as a <a href="https://caramel.dog/cv"><span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 System Engineer</span></a>
+					<br/><br/>
+					I work with <span title="A Creative Co-op" class="text-orange-400 font-semibold"><a href="https://candyhorses.social">Candy Horses</a></span>, spearheading departments 
+					<br/>like <span title="Internet Service Provider" class="text-orange-400 font-semibold"><a href="https://saddle.network">Saddle Networks</a></span> and <span title="Land Development" class="text-orange-400"><a href="https://wiki.candyhorses.social/stable-grounds-llc">Stable Grounds</a></span>.
+					<span  style="font-size: 0.75rem;" class="text-gray-400">
+						<br/>I manage a distributed global network in order to provide
+						<br/>and consume transit services, extending hosting products, and
+						<br/>advertise IP resources to the global routing table.
+					</span>
+					<br/>
+					<br/>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">💻 Linux</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 BIRD</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🪧 Knot</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">⚠️ Grafana</span>
+					<br/>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">💻 Proxmox VE</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">💻 Docker</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🤖 Bash</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 Node.JS</span>
+					<br/><br/>
+					I have worked with <span title="Charter Communications" class="font-semibold text-orange-400"><a href="https://spectrum.com">Charter Spectrum</a></span>, under the 
+					<br/><span class="text-orange-400">Application Operations</span> department. 
+					<span  style="font-size: 0.75rem;" class="text-gray-400">
+						<br/>I validated network protocol and functionality on various
+						<br/>configurations of CPE, tested for known defects, and served
+						<br/>as a liaison between internal and external teams.
+					</span>
+					<br/>
+					<br/>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">💻 OpenWRT</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 CloudSync</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🧾 Jira</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🧪 TestRails</span>
+					<br/><br/>
+					I have worked with <span title="OSCTechnical" class="text-orange-400">OSCTechnical</span>, as their 
+					<br/><span class="text-orange-400">Wireless Network Engineer</span>. 
+					<span  style="font-size: 0.75rem;" class="text-gray-400">
+						<br/>I performed network management and installation services
+						<br/>for nationally distributed contracts. I compiled reports,
+						<br/>remotely monitored networks, and diagnosed problems.
+					</span>
+					<br/>
+					<br/>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🔒 Fortigate</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 Meraki</span>
+					<span class="bg-neutral-700 px-1 py-0.75 shadow-sm hover:bg-neutral-600 hover:rounded-lg rounded-md">🌐 Aruba</span>
+					<br/><br/>
+					Looking to hire me? Shoot me a message:
+					<br/>
+					[ <span class="text-orange-400">business (at) this url</span> ]
+					<br/><br/>
+					[ <span class="text-orange-400 font-semibold"><a href="/">Back Home</a></span> ]
+				</p>
+			</div>
+		</Profile>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(90% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-family: 'gg Sans';
+	}
+	p {
+        font-family: 'gg Sans Medium';
+    }
+    @font-face {
+		font-family: "gg Sans";
+		src: url('/gg sans Regular.ttf') format('truetype');
+	}
+    @font-face {
+		font-family: "gg Sans SemiBold";
+		src: url('/gg sans Semibold.ttf') format('truetype');
+	}
+    @font-face {
+		font-family: "gg Sans Bold";
+		src: url('/gg sans Bold.ttf') format('truetype');
+	}
+    @font-face {
+		font-family: "gg Sans Medium";
+		src: url('/gg sans Medium.ttf') format('truetype');
+	}
+</style>

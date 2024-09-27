@@ -1,0 +1,113 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
+---
+
+<!-- Crypto-tips.astro -->
+<Layout title={SITE_TITLE}></Layout>
+    <div class="min-h-screen bg-gradient-to-b from-blue-900 via-gray-900 to-black text-white flex flex-col items-center justify-center p-6">
+    <h1 class="text-3xl font-bold mb-8 text-center">Support me with Cryptocurrency</h1>
+
+    <div class="w-full max-w-xl">
+
+        <!-- ENS -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-6 shadow-lg">
+            <h2 class="text-xl font-semibold">ENS Domain</h2>
+            <p class="text-sm mb-2 text-gray-400">
+            <a href="https://app.ens.domains/caramel.horse" class="text-blue-400 hover:underline">
+                View on ENS Domains
+            </a>
+            </p>
+            <div class="bg-gray-900 p-2 rounded-md overflow-x-auto text-gray-300 scrollbar-hide">
+            <code class="whitespace-nowrap">caramel.horse</code>
+            </div>
+        </div>
+
+        <!-- Bitcoin -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-6 shadow-lg">
+        <h2 class="text-xl font-semibold">Bitcoin</h2>
+        <p class="text-sm mb-2 text-gray-400">
+            <a href="https://www.blockchain.com/btc/address/bc1qhp5nc7vp6psvps8drhd3yu64tm46jv7ashzyt4" class="text-blue-400 hover:underline">
+            View on Blockchain Explorer
+            </a>
+        </p>
+        <div class="bg-gray-900 p-2 rounded-md overflow-x-auto text-gray-300 scrollbar-hide">
+            <code class="whitespace-nowrap">bc1qhp5nc7vp6psvps8drhd3yu64tm46jv7ashzyt4</code>
+        </div>
+        </div>
+
+        <!-- Bitcoin Lightning -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-6 shadow-lg">
+        <h2 class="text-xl font-semibold">Bitcoin (Lightning)</h2>
+        <p class="text-sm mb-2 text-gray-400">
+            This is a very long address, make sure to copy it correctly. 
+            <br/>
+            <a href="https://www.lightspark.com/learn/bitcoin/bitcoin-network-vs-lightning-network" class="text-blue-400 hover:underline">
+            Click to learn about Lightning Network.
+            </a>
+        </p>
+        <div class="bg-gray-900 p-2 rounded-md overflow-x-auto text-gray-300 scrollbar-hide">
+            <code class="whitespace-nowrap">
+            lnbc1pn0dktddqdgdshx6pqg9c8qpp5t8p0uzhxk7svqddw6qhfyw2ufhkznkfqmymfplsuwlgcq6w0jy2qsp5epfugyupzmgjh0u66nhdcdfmxlw2a7l3jypjedqr4e7j5tx5lv6s9qrsgqcqpcxqy8ayqrzjqv06k0m23t593pngl0jt7n9wznp64fqngvctz7vts8nq4tukvtljqza04sqq3scqqqqqqqqqqqqqqqqq9grzjqtsjy9p55gdceevp36fvdmrkxqvzfhy8ak2tgc5zgtjtra9xlaz97zstnqqqxmcqqsqqqqqqqqqqqqqq9gvq59pkcc68rrc5fmmkfqz6eu2qkszrjcfwc5mttr2s420w03cf3pnshn95ufvy2kje9dmnkcx246zdd2t08rpylhwx0e9zaf074wwkspxyzsw6
+            </code>
+        </div>
+        </div>
+
+        <!-- Ethereum -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-6 shadow-lg">
+        <h2 class="text-xl font-semibold">Ethereum</h2>
+        <p class="text-sm mb-2 text-gray-400">
+            <a href="https://etherscan.io/address/0xf1f4D8DA553163d997A7F596aE6A823756b1cb13" class="text-blue-400 hover:underline">
+            View on Etherscan
+            </a>
+        </p>
+        <div class="bg-gray-900 p-2 rounded-md overflow-x-auto text-gray-300 scrollbar-hide">
+            <code class="whitespace-nowrap">0xf1f4D8DA553163d997A7F596aE6A823756b1cb13</code>
+        </div>
+        </div>
+
+        <!-- Polygon -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-6 shadow-lg">
+        <h2 class="text-xl font-semibold">Polygon</h2>
+        <p class="text-sm mb-2 text-gray-400">
+            <a href="https://polygonscan.com/address/0xf1f4D8DA553163d997A7F596aE6A823756b1cb13" class="text-blue-400 hover:underline">
+            View on Polygonscan
+            </a>
+        </p>
+        <div class="bg-gray-900 p-2 rounded-md overflow-x-auto text-gray-300 scrollbar-hide">
+            <code class="whitespace-nowrap">0xf1f4D8DA553163d997A7F596aE6A823756b1cb13</code>
+        </div>
+        </div>
+
+        <!-- Solana -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+        <h2 class="text-xl font-semibold">Solana</h2>
+        <p class="text-sm mb-2 text-gray-400">
+            <a href="https://explorer.solana.com/address/25nMDAcfJkpz4eFuDagjEboTPJg2pTvdkopebRticfSE" class="text-blue-400 hover:underline">
+            View on Solana Explorer
+            </a>
+        </p>
+        <div class="bg-gray-900 p-2 rounded-md overflow-x-auto text-gray-300 scrollbar-hide">
+            <code class="whitespace-nowrap">25nMDAcfJkpz4eFuDagjEboTPJg2pTvdkopebRticfSE</code>
+        </div>
+        </div>
+    </div>
+
+    <a href="/"><button class="relative inline-flex items-center justify-center p-0.5 mt-8 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Return Home
+        </span>
+    </button></a>
+
+    </div>
+</Layout>
+<style>
+  /* Hide scrollbar in overflow-x-auto */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
